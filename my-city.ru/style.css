@@ -1,0 +1,135 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.header,
+.section {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    background: transparent url('/images/bg-1.jpg') no-repeat no-repeat;
+    background-size: cover;
+
+}
+
+.header .container {
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+}
+
+.header .container .menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .container .menu li {
+    list-style: none;
+    padding: 10px;
+    background-color: rgba(205, 234, 250, 0.61);
+    box-shadow: 1px 1px 1px 0px black;
+    border-radius: 5px;
+    min-width: 150px;
+    text-align: center;
+}
+
+.header .container .menu li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    font-weight: bold;
+}
+
+.header .container,
+.section .container {
+    max-width: 1400px;
+    width: 100%;
+    background-color: rgba(111, 169, 184, 0.55);
+    position: relative;
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header .container .logo {
+    width: 200px;
+    height: 50px;
+}
+
+.header .container .logo img{
+    width: 130%;
+    height: 130%;
+    object-fit: contain;
+}
+
+.section .images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section .images .img-container {
+    width: 33%;
+    height: 250px;
+
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.section .images .img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.section .images .img-container p{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    line-height: 120%;
+    background-color: rgba(0, 0, 0, 0.82);
+
+}
+.section .chart .pipe {
+    background: #eee none repeat scroll 0 0;
+    box-shadow: 3px 3px 3px 0 rgb(200, 200, 200) inset;
+}
+.section .chart .pipe {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    margin-bottom: 1.2em;
+}
+.section .chart p {
+    margin: 0 0 5px
+}
+.section .chart .pipe > div {
+    background: darkslateblue none repeat scroll 0 0;
+    border-radius: 5px;
+    height: 10px;
+}

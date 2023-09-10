@@ -1,0 +1,35 @@
+@import 'reset';
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+$color-red: red;
+$color-blue: blue;
+$font-weight: bold;
+p {
+  color:$color-red;
+@include transform(rotate(360deg));
+  @extend %message-shared;
+  span {
+  font-weight:$font-weight;
+  }
+}
+
+ul {
+  li {
+    last-style: none;
+    a.my.link {
+      color: red;
+      text-decoration: none;
+    }
+  }
+}
